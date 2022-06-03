@@ -7,6 +7,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 
 export const NavbarTop = () => {
+
     return (
         <Navbar
             color="dark"
@@ -58,7 +59,7 @@ export const NavbarTop = () => {
                         </DropdownMenu>
                     </UncontrolledDropdown>
                 </Nav>
-                <NavbarText className=''>
+                <NavbarText className='navButton'>
                     <Link to="/login" replace>Login</Link>
                     <Link to="/register" replace>Register</Link>
                 </NavbarText>

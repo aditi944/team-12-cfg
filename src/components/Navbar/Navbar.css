@@ -1,3 +1,6 @@
 .fixed-top {
     position: relative !important;
 }
+.navButton{
+    color: azure;
+}

@@ -13,17 +13,18 @@ export default function App() {
 
 
     <Router>
-            <div>
-                <Routes>
-                    <Route path="/" element={ <LandingPage/> }/>
-                    <Route path="/NavbarTop" element={ <NavbarTop/> }/>
-                    <Route path="/login" element={ <Login/> }/>
-                    <Route path="/register" element={ <Signup/> }/>
-                </Routes>    
-            </div>
-      </Router>
+      <NavbarTop />
+      <div>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/NavbarTop" element={<NavbarTop />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Signup />} />
+        </Routes>
+      </div>
+    </Router>
   )
- 
+
 
 }
 
