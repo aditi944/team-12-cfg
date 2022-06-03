@@ -8,18 +8,18 @@ export default function LoginPage() {
 
     return (
         <div className="text-center m-5-auto">
-           
+
             <h2>Login To Your Account</h2>
             <form action="/home">
-                    
-              
+
+
                 <p>
-                    <label>Email address</label><br/>
+                    <label>Email address</label><br />
                     <input type="email" name="email" required />
                 </p>
                 <p>
-                    <label>Password</label><br/>
-                    <input type="password" name="password" requiredc />
+                    <label>Password</label><br />
+                    <input type="password" n ame="password" requiredc />
                 </p>
                 <p>
                     <input type="checkbox" name="checkbox" id="checkbox" required /> <span>I agree all statements in <a href="https://google.com" target="_blank" rel="noopener noreferrer">terms of service</a></span>.

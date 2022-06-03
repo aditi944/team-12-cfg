@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Routes, Route } from 'react-router-dom'
-import { NavbarTop } from '../src/components/Navbar/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import NavbarTop from '../src/components/Navbar/Navbar'
 import Signup from '../src/components/Signup/Signup'
 import LandingPage from '../src/components/LandingPage'
 import Login from '../src/components/LoginPage/LoginPage'
@@ -14,8 +14,8 @@ export default function App() {
 
 
     <Router>
-      <NavbarTop />
       <div>
+        <NavbarTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/NavbarTop" element={<NavbarTop />} />

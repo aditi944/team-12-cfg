@@ -5,65 +5,84 @@ import {
 import './Navbar.css';
 
 import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
 
-export const NavbarTop = () => {
+class NavbarTop extends Component {
+    constructor(props) {
+        super(props);
 
-    return (
-        <Navbar
-            color="dark"
-            dark
-            expand="md"
-            fixed="top"
-            light
-        >
-            <NavbarBrand href="/">
-                NavName
-            </NavbarBrand>
-            <NavbarToggler onClick={function noRefCheck() { }} />
-            <Collapse navbar>
-                <Nav
-                    className="me-auto"
-                    navbar
-                >
-                    <NavItem>
-                        <NavLink href="/components/">
-                            Components
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="https://github.com/reactstrap/reactstrap">
-                            GitHub
-                        </NavLink>
-                    </NavItem>
-                    <UncontrolledDropdown
-                        inNavbar
-                        nav
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            isOpen: false
+        };
+        this.wrapper = React.createRef();
+    }
+    toggle() {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
+
+    render() {
+        return (
+            <Navbar
+                color="dark"
+                dark
+                expand="md"
+                fixed="top"
+                light
+            >
+                <NavbarBrand href="/">
+                    NavName
+                </NavbarBrand>
+                <NavbarToggler onClick={this.toggle} />
+                <Collapse isOpen={this.state.isOpen} navbar>
+                    <Nav
+                        className="me-auto"
+                        navbar
                     >
-                        <DropdownToggle
-                            caret
+                        <NavItem>
+                            <NavLink href="/components/">
+                                Components
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                                GitHub
+                            </NavLink>
+                        </NavItem>
+                        <UncontrolledDropdown
+                            inNavbar
                             nav
                         >
-                            Options
-                        </DropdownToggle>
-                        <DropdownMenu end>
-                            <DropdownItem>
-                                Option 1
-                            </DropdownItem>
-                            <DropdownItem>
-                                Option 2
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>
-                                Reset
-                            </DropdownItem>
-                        </DropdownMenu>
-                    </UncontrolledDropdown>
-                </Nav>
-                <NavbarText className='navButton'>
-                    <Link to="/login" replace>Login</Link>
-                    <Link to="/register" replace>Register</Link>
-                </NavbarText>
-            </Collapse>
-        </Navbar>
-    )
+                            <DropdownToggle
+                                caret
+                                nav
+                            >
+                                Options
+                            </DropdownToggle>
+                            <DropdownMenu end>
+                                <DropdownItem>
+                                    Option 1
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Option 2
+                                </DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem>
+                                    Reset
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
+                    </Nav>
+                    <NavbarText className='navButton'>
+                        <Link to="/login" replace>Login</Link>
+                        <Link to="/register" replace>Register</Link>
+                    </NavbarText>
+                </Collapse>
+            </Navbar>
+        );
+    }
 }
+
+export default NavbarTop;
