@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 // import './loginpage.css'
 /* import BackgroundImage from '../../assets/images/bn.jpg' */
 export default function LandingPage() {
+  
     return (
         <header style={ HeaderStyle }>
             <h1 className="main-title text-center">login / register page</h1>

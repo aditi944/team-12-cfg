@@ -18,14 +18,10 @@ export default function App() {
                     <Route path="/NavbarTop" element={ <NavbarTop/> }/>
                     <Route path="/login" element={ <Login/> }/>
                     <Route path="/register" element={ <Signup/> }/>
-                    {/* <Route path="/register" component={ RegisterPage } /> */}
-                    
                 </Routes>    
             </div>
-        </Router>
+      </Router>
   )
-
-    
  
 }
 
