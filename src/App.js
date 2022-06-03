@@ -2,7 +2,11 @@ import './App.css';
 import { NavbarTop } from '../src/components/Navbar/Navbar'
 function App() {
   return (
-    <NavbarTop />
+    <>
+      <NavbarTop />
+      <h1 style={{ position: "relative", color: "Green" }}>Hello</h1>
+
+    </>
   );
 }
 
