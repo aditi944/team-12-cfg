@@ -41,7 +41,7 @@ function ContactUs() {
                      <textarea rows="3" className="form-control" placeholder="Type Your Message"></textarea>
                    </div>
                    <div className="form-group py-3">
-                     <button type="button" className="btn btn-primary shadow w-100" >Send Message</textarea>
+                     <button type="button" className="btn btn-primary shadow w-100" >Send Message</button>
                    </div>
                 </div>
                 <div className="col-md-6" >
