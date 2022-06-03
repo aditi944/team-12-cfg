@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Switch, Routes, Route } from 'react-router-dom
 import { NavbarTop } from '../src/components/Navbar/Navbar'
 import Signup from '../src/components/Signup/Signup'
 import LandingPage from '../src/components/LandingPage'
-import Login from '../src/components/Signup/Signup'
+import Login from '../src/components/LoginPage/LoginPage'
 import './App.css';
 
 
 
 export default function App() {
   return (
+
 
     <Router>
             <div>
@@ -23,6 +24,7 @@ export default function App() {
       </Router>
   )
  
+
 }
 
 // export default App;

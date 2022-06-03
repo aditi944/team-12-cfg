@@ -4,6 +4,8 @@ import {
 } from 'reactstrap';
 import './Navbar.css';
 
+import { Link } from 'react-router-dom';
+
 export const NavbarTop = () => {
     return (
         <Navbar
@@ -56,8 +58,9 @@ export const NavbarTop = () => {
                         </DropdownMenu>
                     </UncontrolledDropdown>
                 </Nav>
-                <NavbarText>
-                    Simple Text
+                <NavbarText className=''>
+                    <Link to="/login" replace>Login</Link>
+                    <Link to="/register" replace>Register</Link>
                 </NavbarText>
             </Collapse>
         </Navbar>
