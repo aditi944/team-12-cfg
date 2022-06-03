@@ -4,6 +4,7 @@ import { NavbarTop } from '../src/components/Navbar/Navbar'
 import Signup from '../src/components/Signup/Signup'
 import LandingPage from '../src/components/LandingPage'
 import Login from '../src/components/LoginPage/LoginPage'
+import Footer from '../src/components/Footer/Footer'
 import './App.css';
 
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/register" element={<Signup />} />
         </Routes>
       </div>
+      <Footer/>
     </Router>
   )
 
