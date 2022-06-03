@@ -23,7 +23,7 @@ export default function App() {
           <Route path="/register" element={<Signup />} />
         </Routes>
       </div>
-      <Footer/>
+      <Footer />
     </Router>
   )
 

@@ -75,9 +75,9 @@ class NavbarTop extends Component {
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
-                    <NavbarText className='navButton'>
-                        <Link to="/login" replace>Login</Link>
-                        <Link to="/register" replace>Register</Link>
+                    <NavbarText>
+                        <Link className='navButton' to="/login" replace>Login</Link>
+                        <Link className='navButton' to="/register" replace>Register</Link>
                     </NavbarText>
                 </Collapse>
             </Navbar>
